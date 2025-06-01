@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineGenie </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>CineGenie</h1>
+    
+    
+    <div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search movie by title..." />
+  <button id="searchBtn"> Search</button>
+</div>
+<p>OR..Just Select a genre or theme & click "Surprise Me!"</p>
+
+    <div class="genre-select">
+      <select id="genre">
+        <option value="28">Action</option>
+        <option value="35">Comedy</option>
+        <option value="18">Drama</option>
+        <option value="27">Horror</option>
+        <option value="10749">Romance</option>
+        <option value="878">Sci-Fi</option>
+        <option value="10770">TV Movie</option>
+
+        
+        
+        <option value="sports">Sports</option>
+        <option value="anime">Anime</option>
+        <option value="true story">True Story</option>
+      </select>
+
+      <button id="surpriseBtn"> Surprise Me</button>
+    </div>
+    <div id="loading" class="hidden">Loading...</div>
+
+
+    <div id="movie-card" class="hidden">
+      <img id="poster" src="" alt="Movie Poster" />
+      <h2 id="title"></h2>
+      <p id="overview"></p>
+      <p><strong>Rating:</strong> <span id="rating"></span>/10</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+<footer style="margin-top: 30px; text-align: center; font-size: 0.9rem; color: #ccc;">
+  &copy; 2025 CineGenie. Made By Akshay Varma as a personal project.
+</footer>
+</html>
